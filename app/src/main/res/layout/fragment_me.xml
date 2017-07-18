@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#E85313"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:onClick="fragmentImageviewIconClick"
+            android:id="@+id/fragmentImageviewIcon"
+            android:layout_marginTop="60dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_home_nav_user"
+            />
+        <TextView
+            android:textColor="#FAFAFA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            />
+
+        <ImageView
+
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             android:src="@mipmap/shezhi"
+            />
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/xiaoxit"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:padding="5dp"
+             android:src="@mipmap/zichan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_mezichan"
+            />
+        <TextView
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:text="我的资产"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:background="#FAFAFA"
+            android:drawableTop="@mipmap/daifu"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="代付款"
+            />
+        <Button
+            android:background="#FAFAFA"
+            android:drawableTop="@mipmap/daishou"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="代收款"
+            />
+        <Button
+            android:background="#FAFAFA"
+            android:drawableTop="@mipmap/daiping"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="代评价"
+            />
+        <Button
+            android:background="#FAFAFA"
+            android:drawableTop="@mipmap/shouhou"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="退换/售后"
+            />
+        <Button
+            android:background="#FAFAFA"
+            android:drawableTop="@mipmap/wodedingdan"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="我的订单"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:padding="5dp"
+            android:src="@mipmap/caichan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_mecaichan"
+            />
+        <TextView
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:text="我的财产"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:background="#FAFAFA"
+            android:drawableTop="@mipmap/daifu"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="我的活动"
+            />
+        <Button
+            android:background="#FAFAFA"
+            android:drawableTop="@mipmap/daishou"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="社区"
+            />
+        <Button
+            android:background="#FAFAFA"
+            android:drawableTop="@mipmap/daiping"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="众筹"
+            />
+        <Button
+            android:background="#FAFAFA"
+            android:drawableTop="@mipmap/shouhou"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="超市"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="问答动态"
+        />
+
+    <ListView
+        android:id="@+id/myFragmentListView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></ListView>
+
+
+    <TextView
+    android:background="#E0E0E0"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="为你推荐"
+    />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/myFragmentListView_1"
+        ></ListView>
+
+</LinearLayout>
